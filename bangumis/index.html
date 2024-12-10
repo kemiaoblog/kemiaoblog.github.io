@@ -103,7 +103,7 @@
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
-  translate: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
   highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330,"highlightFullpage":true,"highlightMacStyle":true},
   copy: {
     success: '复制成功',
@@ -129,12 +129,12 @@
     js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
     buttonText: '加载更多'
   },
-  isPhotoFigcaption: false,
+  isPhotoFigcaption: true,
   islazyload: true,
-  isAnchor: false,
+  isAnchor: true,
   percent: {
     toc: true,
-    rightside: false,
+    rightside: true,
   },
   autoDarkmode: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
@@ -144,7 +144,7 @@
   isHighlightShrink: true,
   isToc: false,
   isShuoshuo: false
-}</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/modify.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="克喵的小站" type="application/atom+xml">
+}</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-blog@2.0.4/css/runtime/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="克喵的小站" type="application/atom+xml">
 </head><body><div id="web_bg" style="background-image: url(url(https://linbol.top/img/background.jpg));"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Kemiaojun/images@main/img/202412021122945.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-home"></i><span> 追番</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 留言板</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">克喵的小站</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-home"></i><span> 追番</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">追番列表</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container">
 <blockquote>
     <p>生命不息，追番不止！</p>
@@ -241,7 +241,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>5065.8 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>5065.9 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>512.4 万</em>
@@ -647,13 +647,13 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>2456.2 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>2462.8 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>1037.2 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-coin">
-                    <span class="bangumi-info-label">硬币</span> <em>8.3 万</em>
+                    <span class="bangumi-info-label">硬币</span> <em>8.4 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-danmaku">
                     <span class="bangumi-info-label">弹幕</span> <em>6.3 万</em>
@@ -690,7 +690,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>1066.7 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>1068.1 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>1051.9 万</em>
@@ -734,13 +734,13 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>2017.1 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>2019.9 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>705.5 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-coin">
-                    <span class="bangumi-info-label">硬币</span> <em>16.2 万</em>
+                    <span class="bangumi-info-label">硬币</span> <em>16.3 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-danmaku">
                     <span class="bangumi-info-label">弹幕</span> <em>8.5 万</em>
@@ -778,7 +778,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>67.9 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>68.0 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>308.6 万</em>
@@ -787,7 +787,7 @@
                     <span class="bangumi-info-label">硬币</span> <em>663</em>
                 </span>
                 <span class="bangumi-info-item bangumi-danmaku">
-                    <span class="bangumi-info-label">弹幕</span> <em>953</em>
+                    <span class="bangumi-info-label">弹幕</span> <em>955</em>
                 </span>
                 <span class="bangumi-info-item bangumi-info-item-score">
                     <span class="bangumi-info-label">评分</span> <em>-</em>
@@ -828,7 +828,7 @@
                     <span class="bangumi-info-label">关注</span> <em>1416.7 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-coin">
-                    <span class="bangumi-info-label">硬币</span> <em>281.4 万</em>
+                    <span class="bangumi-info-label">硬币</span> <em>281.5 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-danmaku">
                     <span class="bangumi-info-label">弹幕</span> <em>366.3 万</em>
@@ -871,10 +871,10 @@
                     <span class="bangumi-info-label">关注</span> <em>309.7 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-coin">
-                    <span class="bangumi-info-label">硬币</span> <em>738</em>
+                    <span class="bangumi-info-label">硬币</span> <em>740</em>
                 </span>
                 <span class="bangumi-info-item bangumi-danmaku">
-                    <span class="bangumi-info-label">弹幕</span> <em>3106</em>
+                    <span class="bangumi-info-label">弹幕</span> <em>3116</em>
                 </span>
                 <span class="bangumi-info-item bangumi-info-item-score">
                     <span class="bangumi-info-label">评分</span> <em>-</em>
@@ -908,7 +908,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>5147.1 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>5147.2 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>287.2 万</em>
@@ -996,7 +996,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>7972.1 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>7972.3 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>683.3 万</em>
@@ -1174,7 +1174,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>1889.4 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>1889.5 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>608.9 万</em>
@@ -1218,7 +1218,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>7667.8 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>7668.1 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>446.8 万</em>
@@ -1306,7 +1306,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>3577.6 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>3577.8 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>915.7 万</em>
@@ -1349,7 +1349,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>2973.9 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>2974.2 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>415.1 万</em>
@@ -1396,7 +1396,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>981.7 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>981.8 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>464.2 万</em>
@@ -1572,7 +1572,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>3186.9 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>3187.0 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>863.9 万</em>
@@ -1663,7 +1663,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>2930.9 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>2931.0 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>479.6 万</em>
@@ -1706,7 +1706,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>4869.1 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>4869.4 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>408.4 万</em>
@@ -1885,7 +1885,7 @@
                     <span class="bangumi-info-label">总播放</span> <em>6.4 亿</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
-                    <span class="bangumi-info-label">关注</span> <em>1267.7 万</em>
+                    <span class="bangumi-info-label">关注</span> <em>1267.8 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-coin">
                     <span class="bangumi-info-label">硬币</span> <em>433.8 万</em>
@@ -2018,7 +2018,7 @@
                     <span class="bangumi-info-label">总播放</span> <em>819.6 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
-                    <span class="bangumi-info-label">关注</span> <em>412.6 万</em>
+                    <span class="bangumi-info-label">关注</span> <em>412.7 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-coin">
                     <span class="bangumi-info-label">硬币</span> <em>2.8 万</em>
@@ -2107,7 +2107,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>369.1 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>369.2 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>342.4 万</em>
@@ -2600,7 +2600,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>6720.2 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>6720.3 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>347.4 万</em>
@@ -2740,7 +2740,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>8268.4 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>8268.5 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>311.8 万</em>
@@ -2835,7 +2835,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>9702.7 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>9702.8 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>344.6 万</em>
@@ -3015,7 +3015,7 @@
                     <span class="bangumi-info-label">总播放</span> <em>1.5 亿</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
-                    <span class="bangumi-info-label">关注</span> <em>504.5 万</em>
+                    <span class="bangumi-info-label">关注</span> <em>504.6 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-coin">
                     <span class="bangumi-info-label">硬币</span> <em>100.7 万</em>
@@ -3148,7 +3148,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>8150.4 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>8150.5 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>379.6 万</em>
@@ -3242,7 +3242,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>8899.5 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>8899.6 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>216.6 万</em>
@@ -3289,7 +3289,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>5914.5 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>5914.6 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>267.0 万</em>
@@ -3419,7 +3419,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>1806.2 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>1806.3 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>568.5 万</em>
@@ -4140,7 +4140,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>4424.3 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>4424.4 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>256.9 万</em>
@@ -4321,7 +4321,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>5353.8 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>5354.2 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>317.4 万</em>
@@ -4366,7 +4366,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>1025.4 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>1025.5 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>41.1 万</em>
@@ -4461,7 +4461,7 @@
                     <span class="bangumi-info-label">硬币</span> <em>79.5 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-danmaku">
-                    <span class="bangumi-info-label">弹幕</span> <em>132.3 万</em>
+                    <span class="bangumi-info-label">弹幕</span> <em>132.4 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-info-item-score">
                     <span class="bangumi-info-label">评分</span> <em>9.4</em>
@@ -4499,7 +4499,7 @@
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>8925.5 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>8925.6 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>376.9 万</em>
@@ -4544,7 +4544,7 @@ Grace=Field House是没有父母的孩子们居住的地方。虽然没有血缘
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>4822.8 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>4822.9 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>336.2 万</em>
@@ -4590,7 +4590,7 @@ Grace=Field House是没有父母的孩子们居住的地方。虽然没有血缘
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>1657.3 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>1657.4 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>117.5 万</em>
@@ -4642,7 +4642,7 @@ Grace=Field House是没有父母的孩子们居住的地方。虽然没有血缘
                     <span class="bangumi-info-label">硬币</span> <em>415.1 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-danmaku">
-                    <span class="bangumi-info-label">弹幕</span> <em>213.2 万</em>
+                    <span class="bangumi-info-label">弹幕</span> <em>213.3 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-info-item-score">
                     <span class="bangumi-info-label">评分</span> <em>9.7</em>
@@ -4719,7 +4719,7 @@ Grace=Field House是没有父母的孩子们居住的地方。虽然没有血缘
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>7127.2 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>7127.3 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>221.6 万</em>
@@ -5123,7 +5123,7 @@ Grace=Field House是没有父母的孩子们居住的地方。虽然没有血缘
                     <span class="bangumi-info-label">硬币</span> <em>203.0 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-danmaku">
-                    <span class="bangumi-info-label">弹幕</span> <em>243.6 万</em>
+                    <span class="bangumi-info-label">弹幕</span> <em>243.7 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-info-item-score">
                     <span class="bangumi-info-label">评分</span> <em>9.8</em>
@@ -5512,7 +5512,7 @@ Grace=Field House是没有父母的孩子们居住的地方。虽然没有血缘
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>3714.5 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>3714.6 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>140.0 万</em>
@@ -5555,7 +5555,7 @@ Grace=Field House是没有父母的孩子们居住的地方。虽然没有血缘
                 </span>
                 
                 <span class="bangumi-info-item bangumi-play">
-                    <span class="bangumi-info-label">总播放</span> <em>7229.4 万</em>
+                    <span class="bangumi-info-label">总播放</span> <em>7229.7 万</em>
                 </span>
                 <span class="bangumi-info-item bangumi-follow">
                     <span class="bangumi-info-label">关注</span> <em>383.7 万</em>
@@ -5708,7 +5708,7 @@ const g="undefined"==typeof pagenumsPre?m[b].parentNode.siblings().length:pagenu
           <span class="card-archive-list-count">1</span>
         </a>
       </li>
-    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-12-08T07:44:02.447Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 By 克喵爱吃卤面</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="8152976493" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-12-10T17:02:03.541Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 By 克喵爱吃卤面</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><script src="/js/custom.js"></script><div class="aplayer no-destroy" data-id="8152976493" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
 if (navigator.serviceWorker.controller) {
 navigator.serviceWorker.addEventListener('controllerchange', function() {
 showNotification()
@@ -5745,23 +5745,16 @@ var cssText = `top: 0; background: ${showBg};`
 document.getElementById('app-refresh').style.cssText = cssText
 }
 }</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
-  function butterfly_clock_anzhiyu_injector_config(){
-    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
-    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
-    console.log('已挂载butterfly_clock_anzhiyu')
-    if(parent_div_git) {
-      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v7.3.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v5.2.2" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="本站使用JsDelivr为静态资源提供CDN加速" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/kemiaoblog/kemiaoblog.github.io" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
     }
-  }
   var elist = 'null'.split(',');
   var cpage = location.pathname;
   var epage = 'all';
-  var qweather_key = 'b16a1fa0e63c46a4b8f28abfb06ae3fe';
-  var gaud_map_key = '4cf1e0f1b602e8717e43667acd593b95';
-  var baidu_ak_key = 'undefined';
   var flag = 0;
-  var clock_rectangle = '112.982279,28.19409';
-  var clock_default_rectangle_enable = 'false';
 
   for (var i=0;i<elist.length;i++){
     if (cpage.includes(elist[i])){
@@ -5770,12 +5763,12 @@ document.getElementById('app-refresh').style.cssText = cssText
   }
 
   if ((epage ==='all')&&(flag == 0)){
-    butterfly_clock_anzhiyu_injector_config();
+    butterfly_footer_beautify_injector_config();
   }
   else if (epage === cpage){
-    butterfly_clock_anzhiyu_injector_config();
+    butterfly_footer_beautify_injector_config();
   }
-  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script async src="/js/ali_font.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+  </script><script async src="/js/runtime/runtime.min.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
 for(var i = 0;i<arr.length;i++){
     arr[i].classList.add('wow');
     arr[i].classList.add('animate__zoomIn');
@@ -5831,4 +5824,35 @@ for(var i = 0;i<arr.length;i++){
     arr[i].setAttribute('data-wow-delay', '');
     arr[i].setAttribute('data-wow-offset', '');
     arr[i].setAttribute('data-wow-iteration', '');
-  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var qweather_key = 'b16a1fa0e63c46a4b8f28abfb06ae3fe';
+  var gaud_map_key = '4cf1e0f1b602e8717e43667acd593b95';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '112.982279,28.19409';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script async src="/js/ali_font.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
